@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Al Reveila - Qatar Qarefree</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/mn.css') }}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <!-- <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div> -->
+      <!-- end loader -->
+      <!-- header -->
+      <!-- main -->
+      <div class="offer">
+         <div class="offer-text">
+            <h3>INTERNATIONAL FANS OFFER</h3>
+         <h1>Enjoy the World Cup without any Bounds</h1>
+          <h2>Rooms available at rates to 30% off till 20th December 2022</h2>
+          <h3>Only at <strong>Al Reveila</strong></h3> 
+          <a href="{{ url_for('reserve') }}" class="btn">Book Now</a>
+          <h3>Booked already? <a style="color: #fff;" href="{{ url_for('view') }}">View Reservations</a></h3>
+
+         </div>
+         
+       </div>
+
+      <!-- end main -->
+      <!-- about -->
+      <div class="about">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-5">
+                  <div class="titlepage" id = "1">
+                     <h2>About Us</h2>
+                     <p>The Al Reveila Palace offers you the elitest experience in Qatar this 2022! The largest hotel in Qatar, located at Doha brings with it real taste of luxury at unbelievable prices. This conventional masterpiece is influenced by the ideas of Meccan meditation and guarantees you an experience you can never forget. If there is Qatar, there is Al Reveila.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="about_img">
+                     <figure><img src="https://imgs.search.brave.com/PdGGOOBHfgMrZ5XM3h8j2faA-eU-gEaUtdPxQ3RWJLA/rs:fit:1200:853:1/g:ce/aHR0cHM6Ly9oaWFz/aWEueHl6L1VwbG9h/ZHMvUG9zdC94dWFu/ZGFvLTIwNTAxMjA5/NTAzOC1RYXRhci1E/b2hhLVN0LVJlZ2lz/LmpwZw" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end about -->
+      <!-- our_room -->
+      <div  class="our_room" id="2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Our Rooms</h2>
+                     <p>We offer several types of rooms to fit every person's needs. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="{{ url_for('static', filename='images/room1.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="bed_room">
+                        <h3>Luxury Premium Room</h3>
+                        <p>Enjoy with your families in a truly luxurious room with a ton of facilities near hand.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="{{ url_for('static', filename='images/room2.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="bed_room">
+                        <h3>Luxury Room</h3>
+                        <p>This bedroom is specially designed for couples. Spend your time with loved ones living in luxury.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="{{ url_for('static', filename='images/room3.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="bed_room">
+                        <h3>Master Deluxe Room</h3>
+                        <p>This room offers an amazing view of the Qatar city skyline. Designed tastefully, this is your one stop destination for absolute luxury and comfort.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="{{ url_for('static', filename='images/room4.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="bed_room">
+                        <h3>Standard Room</h3>
+                        <p>An amazing blend of nature and architecture, this room is right beside our specially grown nursery with fresh air day in and day out.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="{{ url_for('static', filename='images/room5.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="bed_room">
+                        <h3>Mini Suite Room</h3>
+                        <p>This room is perfect for all those solo trips and ventures. With excquisitly designed sheets and carpets, this is decked for all your needs.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6">
+                  <div id="serv_hover"  class="room">
+                     <div class="room_img">
+                        <figure><img src="{{ url_for('static', filename='images/room6.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="bed_room">
+                        <h3>Executive room</h3>
+                        <p>This room is perfect for businessmen and for those who are here on commercial purposes.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end our_room -->
+      <!-- gallery -->
+      <div  class="gallery" id = "3">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>gallery</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery1.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery2.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery3.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery4.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery5.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery6.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery7.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                  <div class="gallery_img">
+                     <figure><img src="{{ url_for('static', filename='images/gallery8.jpg') }}" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end gallery -->
+      <!-- blog -->
+      <div  class="blog" id = "4">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Features</h2>
+                     <p>We have all the major amenities you could ever want. With a 20 - 40 feet swimming pool, children's park, games room, restaurant and bar and a conference room, live in absolute luxury and comfort. This is strategically placed near the Fifa Football stadium and the Quatar Airport.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="{{ url_for('static', filename='images/blog1.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Swimming Pool</h3>
+                        <span>Open 9am - 6:30pm</span>
+                        <p>Our 20 - 40 feet Swimming pool with an open dining area is perfect for spending your evenings in comfort.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="{{ url_for('static', filename='images/blog2.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Reception & Restaurant</h3>
+                        <span>Breakfast is complementary for bookings more than 3 days.</span>
+                        <p>Our delicious continental dishes have recipes from all around the Earth with our best-in-class kitchen and chef.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="blog_box">
+                     <div class="blog_img">
+                        <figure><img src="{{ url_for('static', filename='images/blog3.jpg') }}" alt="#"/></figure>
+                     </div>
+                     <div class="blog_room">
+                        <h3>Bed Room</h3>
+                        <span>Basic Bed Room</span>
+                        <p>We have lots of options for different room designs. Each room has its own story to tell. However, all of them are designed with contemporary architecture and state of the art furniture.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end blog -->
+      <!--  contact -->
+      <div class="contact" id = "5">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Contact Us</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <form id="request" class="main_form">
+                     <div class="row">
+                        <div class="col-md-12 ">
+                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
+                        </div>
+                        <div class="col-md-12">
+                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
+                        </div>
+                        <div class="col-md-12">
+                           <textarea class="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                        </div>
+                        <div class="col-md-12">
+                           <button class="send_btn">Send</button>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="col-md-6">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6203.62904871825!2d51.559049588811874!3d25.278861770413553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1669287147979!5m2!1sen!2sin" width="600" height="400" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class=" col-md-4">
+                     <h3>Contact US</h3>
+                     <ul class="conta">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> Address</li>
+                        <li><i class="fa fa-mobile" aria-hidden="true"></i> +01 1234569540</li>
+                        <li> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#"> demo@gmail.com</a></li>
+                     </ul>
+                  
+               </div>
+            </div>
+           
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
